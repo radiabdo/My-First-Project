@@ -1,0 +1,189 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --dark-:#19283f;
+    --green-: #33d1cc;
+    --red-:#ff3150;
+    --yellow-: #ffc400;
+    --section-: #eff7fa;
+}
+.main-btn {
+    background-color:var(--red-) ;
+    padding: 1rem;
+    color: var(--yellow-);
+}
+.main-btn:hover {
+    background-color: var(--red-);
+}
+.navbar {
+    background-color: var(--dark-);
+}
+.navbar .navbar-brand {
+    color: white;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--green-);
+}
+.navbar .search {
+    border-left: 2px solid var(--green-);
+    color: var(--green-);
+}
+.navbar .navbar-toggler  {
+    color: white;
+}
+.navbar .navbar-toggler i {
+    background-color: var(--red-);
+
+}
+.navbar .navbar-toggler:focus {
+    box-shadow :none ;
+}
+/* start landing */
+.landing {
+    background-color: var(--dark-);
+    height: calc(70vh - 40px);
+}
+/* end landing */
+/* Start features */
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-);
+}
+.features .icon-holder  .icon {
+    color: var(--green-);
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 120px;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: var(--green-);
+}
+.feat h2 {
+    color: var(--yellow-);
+}
+/* End features */
+/* Start works */
+.works {
+    background-color: var(--section-);
+}
+.works ul .active {
+    background-color: var(--red-);
+}
+.works ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.works ul li:hover:not(.active) {
+    color: var(--red-);
+}
+.works .box {
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+}
+.works .box::before {
+    content: "application";
+    position: absolute;
+    background-color: #33d1cc96;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 7px));
+    transition: 0.3s;
+    font-size: 30px;
+}
+.works .box:hover::before {
+    transform: translateX(0);
+}
+
+/* End works */
+/* Start Stuff */
+.stuff  .des {
+    width: 500px;
+}
+
+/* End Stuff */
+/* Start teams */
+.teams {
+    background-color: var(--section-);
+}
+.teams h3 {
+    color: var(--yellow-);
+}
+.teams .box h4 {
+    background-color: var(--green-);
+}
+/* End teams */
+/* start project */
+.project {
+    background-color: var(--dark-);
+}
+/* End project */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-);
+}
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom:1px solid white ;
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="submit"] {
+    color: var(--yellow-);
+    background-color: var(--dark-);
+    padding: 0.5rem 1rem;
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+    background-color: var(--dark-);
+}
+.footer  ul li {
+    width: 20px;
+    height: 20px;
+}
+.footer  ul .facebook {
+    background-color: #1877f2;
+    color: white;
+}
+.footer  ul .twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+.footer  ul .linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+.footer  ul .youtube {
+    background-color: #ff0000;
+    color: white;
+}
+.footer .copyright > span {
+    color: var(--green-);
+}
+.footer .copyright div span {
+    color: var(--yellow-);
+}
+/* End Footer */
